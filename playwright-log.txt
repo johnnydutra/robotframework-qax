@@ -1,0 +1,54 @@
+{"level":30,"time":"2024-10-30T21:24:09.304Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Listening on 61444"}
+(node:3044) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-30T21:24:09.842Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-30T21:24:09.843Z","pid":3044,"hostname":"JOHNNY-LT","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2024-10-30T21:24:10.932Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-10-30T21:24:11.245Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-30T21:24:11.245Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Changed active page"}
+{"level":30,"time":"2024-10-30T21:24:13.607Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  [2m- navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:11281:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2024-10-30T21:24:13.645Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9508:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9552:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-30T21:24:13.646Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-10-30T21:24:13.676Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.677Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.678Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.678Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.680Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-10-30T21:24:13.682Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.682Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.685Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-30T21:24:13.686Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-30T21:24:13.689Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-30T21:24:13.689Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-30T21:24:13.693Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.693Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.694Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-10-30T21:24:13.695Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-10-30T21:24:13.701Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-10-30T21:24:13.710Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.710Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-30T21:24:13.755Z","pid":3044,"hostname":"JOHNNY-LT","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-30T21:24:13.804Z","pid":3044,"hostname":"JOHNNY-LT","msg":"End of node method closeAllBrowsers"}
