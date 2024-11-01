@@ -6,6 +6,15 @@ Library          Browser
 
 Toast Message Should Be
     [Arguments]    ${expected_text}
-    Wait For Elements State    css=.Toastify__toast-body    visible    5s
-    Get Text    css=.Toastify__toast-body    equal    
-    ...         ${expected_text}
+
+    ${toast}    Set Variable    css=.Toastify__toast-body
+
+    Wait For Elements State    
+    ...    element=${toast}
+    ...    state=visible    
+    ...    timeout=5s
+
+    Get Text    
+    ...    selector=${toast}    
+    ...    assertion_operator=equal    
+    ...    assertion_expected=${expected_text}
