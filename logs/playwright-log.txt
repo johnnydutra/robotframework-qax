@@ -1,0 +1,62 @@
+{"level":30,"time":"2024-11-01T19:03:37.730Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Listening on 54290"}
+(node:12556) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-11-01T19:03:38.227Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-11-01T19:03:38.631Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-11-01T19:03:38.632Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-11-01T19:03:38.632Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-11-01T19:03:38.637Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-01T19:03:38.637Z","pid":12556,"hostname":"JOHNNY-LT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-01T19:03:38.650Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-11-01T19:03:38.838Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-01T19:03:38.838Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active page"}
+{"level":30,"time":"2024-11-01T19:03:39.483Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-01T19:03:39.558Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-01T19:03:39.558Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with css=#signup h2 in page."}
+{"level":30,"time":"2024-11-01T19:03:39.605Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Retrieved text for element css=#signup h2 containing Faça seu cadastro e venha para a Smartbit!"}
+{"level":30,"time":"2024-11-01T19:03:39.605Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-01T19:03:39.608Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.608Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2024-11-01T19:03:39.619Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.622Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.622Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2024-11-01T19:03:39.634Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.637Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.637Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with id=cpf in page."}
+{"level":30,"time":"2024-11-01T19:03:39.652Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-01T19:03:39.656Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-01T19:03:39.656Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
+{"level":30,"time":"2024-11-01T19:03:39.718Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method click"}
+{"level":30,"time":"2024-11-01T19:03:39.722Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-01T19:03:39.722Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Strict mode is enabled, find Locator with text=Falta pouco para fazer parte da família Smartbit! in page."}
+{"level":30,"time":"2024-11-01T19:03:42.095Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-01T19:03:42.100Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-11-01T19:03:42.100Z","pid":12556,"hostname":"JOHNNY-LT","Take screenshot with options: ":{"path":"C:\\Coding\\robotframework-qax\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-11-01T19:03:42.267Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-11-01T19:03:42.273Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.275Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.277Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.280Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.284Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-11-01T19:03:42.284Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changing current active page: page=f49ad3c1-0a65-4b64-85b5-028bfaff5b3b"}
+{"level":30,"time":"2024-11-01T19:03:42.285Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active page"}
+{"level":30,"time":"2024-11-01T19:03:42.289Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.290Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.292Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-01T19:03:42.292Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-01T19:03:42.294Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-01T19:03:42.294Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-01T19:03:42.298Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changing current active page: page=f49ad3c1-0a65-4b64-85b5-028bfaff5b3b"}
+{"level":30,"time":"2024-11-01T19:03:42.298Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active page"}
+{"level":30,"time":"2024-11-01T19:03:42.302Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.304Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.307Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active context"}
+{"level":30,"time":"2024-11-01T19:03:42.307Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changing current active page: page=f49ad3c1-0a65-4b64-85b5-028bfaff5b3b"}
+{"level":30,"time":"2024-11-01T19:03:42.307Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Changed active page"}
+{"level":30,"time":"2024-11-01T19:03:42.309Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-11-01T19:03:42.322Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Removed page=0184d762-38f4-4cd7-bbcf-979b488b088c from context=4fe41f30-a8db-46fc-bd17-017898abcd87 page stack"}
+{"level":30,"time":"2024-11-01T19:03:42.342Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-11-01T19:03:42.351Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.352Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-01T19:03:42.411Z","pid":12556,"hostname":"JOHNNY-LT","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-11-01T19:03:42.579Z","pid":12556,"hostname":"JOHNNY-LT","msg":"End of node method closeAllBrowsers"}

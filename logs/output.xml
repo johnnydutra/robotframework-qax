@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-11-01T16:03:36.633689" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Coding\robotframework-qax\tests">
+<suite id="s1-s1" name="Signup" source="C:\Coding\robotframework-qax\tests\signup.robot">
+<test id="s1-s1-t1" name="Should Initiate User Signup" line="13">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-01T16:03:37.143700" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Coding\\robotframework-qax\\logs\\browser\\traces\\28ffdf12-981d-401f-a4a8-5981c0fed62f"}</msg>
+<msg time="2024-11-01T16:03:37.178485" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using port 54290</msg>
+<msg time="2024-11-01T16:03:37.178485" level="INFO">Node startup parameters: ['node', 'C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '54290']</msg>
+<msg time="2024-11-01T16:03:38.634000" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Coding\\robotframework-qax\\logs\\browser\\traces\\28ffdf12-981d-401f-a4a8-5981c0fed62f"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-01T16:03:37.143700" elapsed="1.490300"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-01T16:03:39.485614" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2024-11-01T16:03:39.485614" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-01T16:03:38.634000" elapsed="0.851614"/>
+</kw>
+<status status="PASS" start="2024-11-01T16:03:37.142683" elapsed="2.343998"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-11-01T16:03:39.487615" level="INFO">${account} = {'name': 'Johnny Test', 'email': 'test@test.com', 'cpf': '09364208048'}</msg>
+<var>${account}</var>
+<arg>name=${DEFAULT_NAME}</arg>
+<arg>email=${DEFAULT_EMAIL}</arg>
+<arg>cpf=${DEFAULT_CPF}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.486681" elapsed="0.000934"/>
+</kw>
+<kw name="Delete Account By Email" owner="DB">
+<kw name="Open Database Connection" owner="DB">
+<kw name="Connect To Database" owner="DatabaseLibrary">
+<msg time="2024-11-01T16:03:39.488617" level="INFO">Looking for configuration file: 'resources\db.cfg'</msg>
+<msg time="2024-11-01T16:03:39.489612" level="INFO">Configuration file doesn't exist</msg>
+<msg time="2024-11-01T16:03:39.532613" level="INFO">Connect to DB using : psycopg2.connect(database='smartbit', user='postgres', password=***, host='localhost', port=5432)</msg>
+<arg>db_module=psycopg2</arg>
+<arg>db_name=smartbit</arg>
+<arg>db_user=postgres</arg>
+<arg>db_password=QAx@123</arg>
+<arg>db_host=localhost</arg>
+<arg>db_port=5432</arg>
+<doc>Creates a database connection using the DB API 2.0 ``db_module`` and the parameters provided.
+Along with listed commonly used arguments (`db_name`, `db_host` etc.)
+you can set any other DB module specific parameters as key/value pairs.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.488617" elapsed="0.061994"/>
+</kw>
+<status status="PASS" start="2024-11-01T16:03:39.488617" elapsed="0.062994"/>
+</kw>
+<kw name="Execute Sql String" owner="DatabaseLibrary">
+<msg time="2024-11-01T16:03:39.551611" level="INFO" html="true">Executing sql:&lt;br&gt;&lt;code style="font-weight: bold;"&gt;DELETE FROM accounts WHERE email = 'test@test.com'&lt;/code&gt;</msg>
+<arg>DELETE FROM accounts WHERE email = '${email}'</arg>
+<doc>Executes the ``sql_string`` as a single SQL command.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.551611" elapsed="0.003001"/>
+</kw>
+<kw name="Disconnect From Database" owner="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.555611" elapsed="0.000000"/>
+</kw>
+<arg>${DEFAULT_EMAIL}</arg>
+<status status="PASS" start="2024-11-01T16:03:39.488617" elapsed="0.066994"/>
+</kw>
+<kw name="Submit Signup Form" owner="Landing">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-01T16:03:39.605903" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
+<arg>css=#signup h2</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro e venha para a Smartbit!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.556611" elapsed="0.049292"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-01T16:03:39.605903" level="INFO">Fills the text 'Johnny Test' in the given field.</msg>
+<arg>id=name</arg>
+<arg>${account_data}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.605903" elapsed="0.014822"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-01T16:03:39.620725" level="INFO">Fills the text 'test@test.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${account_data}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.620725" elapsed="0.013468"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-01T16:03:39.635191" level="INFO">Fills the text '09364208048' in the given field.</msg>
+<arg>id=cpf</arg>
+<arg>${account_data}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.635191" elapsed="0.017813"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-01T16:03:39.654004" level="INFO">Clicks the element 'css=button &gt;&gt; text=Cadastrar'.</msg>
+<arg>css=button &gt;&gt; text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.653004" elapsed="0.066751"/>
+</kw>
+<arg>${account}</arg>
+<status status="PASS" start="2024-11-01T16:03:39.555611" elapsed="0.164144"/>
+</kw>
+<kw name="Verify Welcome Message" owner="Welcome">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-01T16:03:42.097466" level="INFO">Waited for Element with selector text=Falta pouco para fazer parte da família Smartbit! at state visible</msg>
+<arg>text=Falta pouco para fazer parte da família Smartbit!</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-01T16:03:39.719755" elapsed="2.377711"/>
+</kw>
+<status status="PASS" start="2024-11-01T16:03:39.719755" elapsed="2.377711"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-11-01T16:03:42.268643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-11-01T16:03:42.097466" elapsed="0.171177"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-11-01T16:03:37.141705" elapsed="5.126938"/>
+</test>
+<doc>User sign up scenarios</doc>
+<status status="PASS" start="2024-11-01T16:03:36.654227" elapsed="5.689898"/>
+</suite>
+<status status="PASS" start="2024-11-01T16:03:36.635264" elapsed="5.719856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Signup">Tests.Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
