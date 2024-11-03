@@ -14,5 +14,11 @@ Open Database Connection
 Delete Account By Email
     [Arguments]    ${email}
     Open Database Connection
-    Execute Sql String    DELETE FROM accounts WHERE email = '${email}'
+    Execute Sql String    DELETE FROM accounts WHERE email = '${email}';
+    Disconnect From Database
+
+Insert User Account
+    [Arguments]    &{account_data}
+    Open Database Connection
+    Execute Sql String    INSERT INTO accounts (name, email, cpf) VALUES ('${account_data}[name]', '${account_data}[email]', '${account_data}[cpf]');
     Disconnect From Database

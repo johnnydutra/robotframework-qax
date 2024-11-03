@@ -6,9 +6,6 @@ Resource         ../resources/base.resource
 Test Setup       Start Session
 Test Teardown    Take Screenshot
 
-*** Variables ***
-&{MANAGER}    email=sac@smartbit.com    password=pwd123
-
 *** Test Cases ***
 Should Login As Manager
     Go To Login Page
