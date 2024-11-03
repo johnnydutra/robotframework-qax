@@ -1,0 +1,82 @@
+{
+  "create": {
+    "account": {
+      "name": "Paulo Cintura",
+      "email": "paulo.cintura@test.com",
+      "cpf": "73592251082"
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Paulo Cintura",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
+  },
+  "duplicate": {
+    "account": {
+      "name": "Jonas Brother",
+      "email": "jonas.brother@test.com",
+      "cpf": "36183858030"
+    },
+    "plan": {
+      "name": "Plano Smart",
+      "id": 1,
+      "price": 99.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Jonas Brother",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
+  },
+  "search": {
+    "account": {
+      "name": "Mariana da Silva",
+      "email": "mariana.silva@test.com",
+      "cpf": "25870744016"
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Mariana da Silva",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
+  },
+  "delete": {
+    "account": {
+      "name": "Felipe Albuquerque",
+      "email": "felipe.albuquerque@test.com",
+      "cpf": "90174595069"
+    },
+    "plan": {
+      "name": "Plano Smart",
+      "id": 1,
+      "price": 99.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Felipe Albuquerque",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
+  }
+}

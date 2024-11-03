@@ -17,6 +17,7 @@ Resource         ./pages/NewMembership.resource
 Resource         ./pages/Welcome.resource
 
 Resource         ./components/BoxNotice.resource
+Resource         ./components/Modal.resource
 Resource         ./components/Navbar.resource
 Resource         ./components/Toast.resource
 
@@ -45,6 +46,6 @@ Enroll New Member
     Go To Memberships Page
     Start New Membership Enrollment
     Select Account    ${data}[account][name]    ${data}[account][cpf]
-    Select Plan    ${data}[plan]
+    Select Plan    ${data}[plan][name]
     Fill Credit Card Data    &{data}[credit_card]
     Finish Membership Enrollment

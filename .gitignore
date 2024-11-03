@@ -1,3 +1,3 @@
-resources/libs/__pycache__
-logs/browser/traces
-logs/browser/screenshot
+web/resources/libs/__pycache__
+web/logs/browser/traces
+web/logs/browser/screenshot

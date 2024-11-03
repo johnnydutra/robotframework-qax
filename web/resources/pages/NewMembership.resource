@@ -25,4 +25,3 @@ Fill Credit Card Data
 
 Finish Membership Enrollment
     Click    css=button[type='submit']
-    Toast Message Should Be    Matrícula cadastrada com sucesso.

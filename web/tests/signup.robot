@@ -17,7 +17,7 @@ Should Initiate User Signup
     ...    email=${DEFAULT_EMAIL}
     ...    cpf=${DEFAULT_CPF}
 
-    Delete Account By Email    ${DEFAULT_EMAIL}
+    Database Delete Account By Email    ${DEFAULT_EMAIL}
 
     Submit Signup Form    ${account}
     Verify Welcome Message

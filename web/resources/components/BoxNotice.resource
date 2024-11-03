@@ -7,14 +7,14 @@ Library          Browser
 Notice Error Message Should Be
     [Arguments]    ${expected_text}
 
-    ${notice}    Set Variable    css=form .notice
+    ${notice}    Set Variable    form .notice
     
     Wait For Elements State    
-    ...    element=${notice}    
+    ...    css=${notice}    
     ...    state=visible    
     ...    timeout=5s
 
     Get Text    
-    ...    selector=${notice}    
+    ...    css=${notice}    
     ...    assertion_operator=equal    
     ...    assertion_expected=${expected_text}
