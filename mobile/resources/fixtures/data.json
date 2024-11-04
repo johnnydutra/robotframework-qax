@@ -18,5 +18,25 @@
       "cvv": "123",
       "last": 4242
     }
+  },
+  "update": {
+    "account": {
+      "name": "Dominic Toreto",
+      "email": "dominic.toreto@test.com",
+      "cpf": "13260933042"
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Dominic Toreto",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
   }
 }

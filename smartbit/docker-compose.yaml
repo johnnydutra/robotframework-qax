@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "QAx@123"
+    ports:
+      - "5432:5432"
+    networks:
+      - smartbit-network
+      
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@smartbit.com"
+      PGADMIN_DEFAULT_PASSWORD: "QAx@123"
+    ports:
+      - "15432:80"
+    depends_on:
+      - db
+    networks:
+      - smartbit-network
+
+networks: 
+  smartbit-network:

@@ -20,7 +20,7 @@ Start Session
     ...    automationName=UIAutomator2
     ...    deviceName=Emulator
     ...    udid=emulator-5554
-    ...    app=${EXECDIR}/app/smartbit-beta.apk
+    ...    app=${CURDIR}/../../smartbit/app/smartbit-beta.apk
     ...    autoGrantPermissions=true
     
     Wait Until Page Contains    IP da API    30s
