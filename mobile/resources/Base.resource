@@ -4,6 +4,7 @@ Documentation    Main file
 Library          AppiumLibrary
 
 Resource         ../../libs/DB.resource
+Resource         ../../services/Service.resource
 
 Resource         ./actions/Account.resource
 Resource         ./actions/Login.resource

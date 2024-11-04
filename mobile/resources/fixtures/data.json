@@ -23,7 +23,9 @@
     "account": {
       "name": "Dominic Toreto",
       "email": "dominic.toreto@test.com",
-      "cpf": "13260933042"
+      "cpf": "13260933042",
+      "height": 190,
+      "weight": 80
     },
     "plan": {
       "name": "Plano Black",
