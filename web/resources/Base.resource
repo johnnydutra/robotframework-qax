@@ -5,9 +5,10 @@ Documentation    Main repo file
 Library          Browser
 Library          JSONLibrary
 
-Library          libs/Account.py
+Library          ../../libs/Account.py
 
-Resource         ./DB.resource
+Resource         ../../libs/Data.resource
+Resource         ../../libs/DB.resource
 
 Resource         ./pages/Accounts.resource
 Resource         ./pages/Landing.resource
@@ -29,12 +30,6 @@ Resource         ./components/Toast.resource
 Start Session
     New Browser    browser=chromium    headless=False
     New Page    http://localhost:3000
-
-Get JSON Fixture
-    [Arguments]    ${file_name}    ${node_path}
-    ${data}    Load Json From File    ${EXECDIR}/resources/fixtures/${file_name}.json
-
-    RETURN    ${data}[${node_path}]
 
 Sign In With Admin User
     Go To Login Page

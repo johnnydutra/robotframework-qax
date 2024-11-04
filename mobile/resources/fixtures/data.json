@@ -1,0 +1,22 @@
+{
+  "login": {
+    "account": {
+      "name": "Paula Cinturo",
+      "email": "paula.cinturo@test.com",
+      "cpf": "82259114075"
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Paula Cinturo",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "cvv": "123",
+      "last": 4242
+    }
+  }
+}

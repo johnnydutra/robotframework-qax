@@ -1,3 +1,4 @@
-web/resources/libs/__pycache__
+__pycache__
 web/logs/browser/traces
 web/logs/browser/screenshot
+mobile/node_modules
